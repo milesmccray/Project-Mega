@@ -10,7 +10,7 @@ screen_w = 1080
 screen = pygame.display.set_mode ((screen_w,screen_h))
 
 #import background image
-bg = pygame.image.load('mega_bg_demo.png')
+bg = pygame.image.load('data/mega_bg_demo.png')
 
 
 #main game loop
