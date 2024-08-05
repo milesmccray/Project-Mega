@@ -1,0 +1,8 @@
+{
+    "name": "Default Joe",
+    "inventory": [
+        "keys",
+        "mirror"
+    ],
+    "current_room": "kitchen"
+}
