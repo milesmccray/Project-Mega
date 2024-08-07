@@ -1,4 +1,3 @@
-"""Class to handle the "Player" States & Inventory"""
 import json
 import os.path
 
@@ -25,7 +24,7 @@ class Player:
     def save_player(self):
         player_save = {'name': self.name, 'inventory': self.inventory, 'current_room': self.current_room}
 
-        with open('data/example_player_save.json', 'w') as f:
+        with open('data/player_save.json', 'w') as f:
             json.dump(player_save, f, indent=4)
 
     def load_player(self):
