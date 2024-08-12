@@ -11,8 +11,8 @@ class Room:
     def __init__(self, description: str, image: str, entities: list[Entity] = None, items: list[Item] = None):
         self.description = description          # Description of Room object
         self.image = image                      # String containing path to image file
-        self.entities = entities                # List of Entity objects contained within the room
-        self.items = items                      # List of Item objects contained within the room
+        self.entities = entities                # List of entities contained within the room object
+        self.items = items                      # List of items contained within the room object
 
     def update_description(self, description: str):
         self.description = description
