@@ -1,18 +1,21 @@
 {
   "items": {
     "br_helmet": {
-      "description": "A helmet with a light",
-      "position": "(50, 50), (25, 25)",
+      "name": "Miner's Helmet",
+      "description": "You used to pretend to be a miner",
+      "position": [50, 50, 25, 25],
       "entity": false,
       "usable": true
     },
     "br_doorkey": {
+      "name": "Bedroom Key",
       "description": "A key for the bedroom door",
       "position": null,
       "entity": "br_chest",
       "usable": true
     },
     "br_chestkey": {
+      "name": "Bedroom Chest Key",
       "description": "A key for the bedroom chest",
       "position": null,
       "entity": "br_bed",
@@ -22,25 +25,19 @@
 
   "entities": {
     "br_bed": {
-      "description": "Your bed",
-      "position": "(200, 200), (30, 30)",
+      "name": "Bedroom Bed",
+      "description": "Your bed you've had since you were a kid",
+      "position": [665, 514, 148, 111],
       "items": ["br_chestkey"],
       "usable": true
     },
     "br_chest": {
-      "description": "Your chest of things",
-      "position": "(150, 30), (50, 50)",
+      "name": "Bedroom Chest",
+      "description": "Your chest where you kept your childhood toys",
+      "position": [692, 121, 69, 80],
       "items": ["br_doorkey"],
       "usable": true
     }
-  },
-
-  "rooms": {
-    "bedroom": {
-      "description": "Your bedroom",
-      "image": "data/mega_bg_demo.png",
-      "entities": ["br_chest", "br_bed"],
-      "items": ["br_helmet"]
-    }
   }
+
 }

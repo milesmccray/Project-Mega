@@ -1,13 +1,23 @@
+import pygame
+
+
 class Item:
     """
     A class representing item object in the game.
     Items are found in room or entity objects. Can also be associated with player object (inventory)
     """
 
-    def __init__(self, description: str, position: tuple[tuple[float, float], tuple[float, float]] = None,
+    def __init__(self, name: str, description: str, position: list[float, float] = None,
                  entity: bool = None, usable: bool = True):
+        self.name = name  # Game name of the Item Object
         self.description = description  # Description of the Item object
-        self.position = position  # Only used for Item objects found outside of Entity objects
+
+        # Checks if item object has a room position
+        if position:
+            self.position = pygame.Rect(position)
+        else:
+            self.position = position
+
         self.entity = entity  # Indicates what Entity the Item is found in
         self.usable = usable  # Determines if the Item is clickable by the player
 
