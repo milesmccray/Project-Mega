@@ -22,14 +22,18 @@ class Bedroom:
         ####################### DECLARE ENTITY OBJECTS #######################
         br_bed = Entity(**object_data['entities']['br_bed'])
         br_chest = Entity(**object_data['entities']['br_chest'])
+        br_door = Entity(**object_data['entities']['br_door'])
+
+        ####################### ADD ITEM OBJECTS TO ENTITY OBJECTS ###########
+        br_bed.add_item(br_chestkey)
+        br_chest.add_item(br_doorkey)
 
         ####################### BUILD ROOM ###################################
-        self.entities = [br_bed, br_chest]
-        self.items = [br_helmet, br_doorkey, br_chestkey]
+        self.entities = [br_bed, br_chest, br_door]  # All entity objects in the room
+        self.items = [br_helmet]                     # All item objects in the room
 
     def remove_entity(self, entity: Entity):
         self.entities.remove(entity)
 
     def remove_item(self, item: Item):
         self.items.remove(item)
-
