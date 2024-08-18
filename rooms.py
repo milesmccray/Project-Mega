@@ -37,3 +37,5 @@ class Bedroom:
 
     def remove_item(self, item: Item):
         self.items.remove(item)
+
+x = Bedroom()

@@ -4,19 +4,28 @@
       "name": "Miner's Helmet",
       "description": "You used to pretend to be a miner",
       "position": [193, 537, 25, 25],
-      "usable": true
+      "events": {
+        "inventory": true,
+        "usable": true
+      }
     },
     "br_doorkey": {
       "name": "Bedroom Key",
       "description": "A key for the bedroom door",
       "position": null,
-      "usable": true
+      "events": {
+        "inventory": true,
+        "usable": true
+      }
     },
     "br_chestkey": {
       "name": "Bedroom Chest Key",
       "description": "A key for the bedroom chest",
       "position": null,
-      "usable": true
+      "events": {
+        "inventory": true,
+        "usable": true
+      }
     }
   },
 
@@ -24,25 +33,35 @@
     "br_bed": {
       "name": "Bedroom Bed",
       "description": "Your bed you've had since you were a kid",
-      "group": 2,
       "position": [665, 514, 148, 111],
-      "usable": true
+      "events": {
+        "inventory": false,
+        "usable": true,
+        "container": true,
+        "door": false
+      }
     },
     "br_chest": {
       "name": "Bedroom Chest",
       "description": "Your chest where you kept your childhood toys",
-      "group": 2,
       "position": [692, 121, 69, 80],
-      "usable": true
+      "events": {
+        "inventory": false,
+        "usable": true,
+        "container": true,
+        "door": false
+      }
     },
     "br_door": {
       "name": "Bedroom Door",
       "description": "The door seems to be locked",
-      "group": 1,
       "position": [270, 21, 43, 77],
-      "usable": false
-
+      "events": {
+        "inventory": false,
+        "usable": true,
+        "container": false,
+        "door": true
+      }
     }
   }
-
 }
