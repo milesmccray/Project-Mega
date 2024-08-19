@@ -11,7 +11,8 @@ class Item:
 
         self.name = name                # Game name of the Item Object
         self.description = description  # Description of the Item Object
-        # Checks if item object has position value
+
+        # Checks if Item object has position value
         if position:
             self.position = pygame.Rect(position)
         else:

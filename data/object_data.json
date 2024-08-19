@@ -3,7 +3,7 @@
     "br_helmet": {
       "name": "Miner's Helmet",
       "description": "You used to pretend to be a miner",
-      "position": [193, 537, 25, 25],
+      "position": [1, 64, 16, 16],
       "events": {
         "inventory": true,
         "usable": true
@@ -33,7 +33,7 @@
     "br_bed": {
       "name": "Bedroom Bed",
       "description": "Your bed you've had since you were a kid",
-      "position": [665, 514, 148, 111],
+      "position": [193, 113, 64, 32],
       "events": {
         "inventory": false,
         "usable": true,
@@ -44,7 +44,7 @@
     "br_chest": {
       "name": "Bedroom Chest",
       "description": "Your chest where you kept your childhood toys",
-      "position": [692, 121, 69, 80],
+      "position": [209, 17, 32, 16],
       "events": {
         "inventory": false,
         "usable": true,
@@ -55,7 +55,7 @@
     "br_door": {
       "name": "Bedroom Door",
       "description": "The door seems to be locked",
-      "position": [270, 21, 43, 77],
+      "position": [49, 1, 32, 9],
       "events": {
         "inventory": false,
         "usable": true,
