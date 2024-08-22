@@ -4,9 +4,6 @@ import pygame
 
 
 class Player:
-    """
-    A class representing the "Player" object in the game.
-    """
     def __init__(self, name='Default Joe'):
         self.name = name
         self.inventory = []
